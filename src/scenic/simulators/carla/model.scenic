@@ -317,6 +317,28 @@ class IronPlate(Prop):
 class TrafficWarning(Prop):
     blueprint: Uniform(*blueprints.trafficwarningModels)
 
+class Drone(Prop):
+    blueprint: Uniform(*blueprints.droneModels)
+
+    def startDynamicSimulation(self):
+        print("Hello")
+        #rot = self.get_rotation()
+        print(self.position)
+        self.setPosition(self.position, elevation=3)
+        print(self.color)
+        print(self.position)
+        #self.set_rotation(rot)
+
+
+
+def move_drone(model, dx, dy, dz, tsteps, dt):
+    for t in range(tsteps):
+        time.sleep(dt)
+        location = model.get_location()
+        location.x += dx
+        location.y += dy
+        location.z += dz
+        model.set_location(location)
 
 ## Utility functions
 

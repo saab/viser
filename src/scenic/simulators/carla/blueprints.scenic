@@ -232,3 +232,16 @@ walkerModels = [
       'walker.pedestrian.0014'
 ]
 
+#: blueprints for drones
+droneModels = [
+      'static.prop.drone_civilian_bee',
+      'static.prop.drone_civilian_generic',
+      'static.prop.drone_civilian_minimalistic',
+      'static.prop.drone_civilian_phantom',
+      'static.prop.drone_civilian_parrot',
+      'static.prop.drone_fictitious_cyberpolicevtol',
+      'static.prop.drone_military_bayraktar',
+      'static.prop.drone_military_reaper',
+      'static.prop.f35',
+      'static.prop.hawk'
+]
